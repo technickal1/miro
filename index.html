@@ -7,30 +7,15 @@
       miro.initialize({
         extensionPoints: {
           bottomBar: {
-            title: 'Some title',
+            title: 'Open Window',
             svgIcon: '<circle cx="12" cy="12" r="9" fill="none" fill-rule="evenodd" stroke="currentColor" stroke-width="2"/>',
             onClick: () => {
-              alert('Hi!')
+              alert('Clicked!')
             }
           }
         }
       })
     })
-        miro.onReady(() => {
-  const icon24 = 'some svg here'
-
-  miro.initialize({
-    extensionPoints: {
-      bottomBar: {
-        title: 'Demo app button',
-        svgIcon: icon24,
-        onClick: () => {
-          alert('Bottom bar item has been clicked')
-        }
-      },
-    }
-  })
-})
     </script>
 </head>
 </html>
